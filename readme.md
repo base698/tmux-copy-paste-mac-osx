@@ -4,6 +4,7 @@ Instead of using reattach-user-space I built a simple way to do it with an http 
 
 ## Do these once
 Put pbcopy.js in ```~/bin```
+
 Add ```alias copyon="nohup node ~/bin/pbcopy  2>&1 > /tmp/copy &"``` to .bash_profile
 
 Add the following to ~/.tmux.conf
