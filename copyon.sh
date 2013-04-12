@@ -12,7 +12,7 @@ function startTmuxCopy {
 	while true 
 	do 
 		nc -l 5683 < /dev/null
-		nc -l 5683 < pbpaste;
+		pbpaste | nc -l 5683
 	done &
 }
 startTmuxCopy
