@@ -1,11 +1,11 @@
 # tmux copy and paste on OSX
 
-Instead of using reattach-user-space I built a simple way to do it with an http server running in the background that's launched on bootup.  Server runs on port 5482.  
+Instead of using reattach-user-space I built a simple way to do it with an netcat on loop running in the background that's launched on bootup, or you can just run it before running tmux.  Server runs on port 5482 and port 5483.  
 
 ## Do these once
-Put copyon.sh in ```~/bin```
+Put ```copyon.sh``` in ```~/bin```
 
-Add the following to ~/.tmux.conf
+Add the following to ```~/.tmux.conf```
 
 ```sh
 unbind p
