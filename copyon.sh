@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function startTmuxCopy {
-	touch /tmp/__pastebuffer
+	touch /tmp/__openbuf
 	#copy
 	while true 
 		do 
